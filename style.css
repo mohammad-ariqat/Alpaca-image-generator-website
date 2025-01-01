@@ -34,9 +34,6 @@ body{
     margin: 0;
     margin-bottom: 5px;
 }
-.button-container button{
-
-}
 #operations{
     grid-area: 3/1/-2/2;
     margin-left: 0;
