@@ -64,4 +64,19 @@ document.addEventListener("DOMContentLoaded", () => {
         document.getElementById("accessories").src = `alpaca-generator-assets/alpaca/accessories/${accessoryStayles[randomAccessories - 1].getAttribute("id")}.png`;
         document.getElementById("backgrounds").src = `alpaca-generator-assets/alpaca/backgrounds/${backgroundStayles[randomBackground - 1].getAttribute("id")}.png`;
     });
+
+
+    $("#download").click( function download() {
+        const fullImageDiv = document.querySelector(".full-image");
+
+        // Used html2canvas with a callback to generate the image
+        html2canvas(fullImageDiv, {
+            onrendered: function(canvas) { 
+                const link = document.createElement("a");
+                link.download = "combined-image.png";  
+                link.href = canvas.toDataURL();  
+                link.click();  
+            }
+        });
+    });
 });
