@@ -44,7 +44,8 @@ document.addEventListener("DOMContentLoaded", () => {
             
         });
     });
-    document.getElementById("random").addEventListener("click", () => {
+
+    $("#random").click( function random() {
         let randomHair = Math.floor(Math.random() * hairStayles.length) + 1;
         let randomEars = Math.floor(Math.random() * earsStayles.length) + 1;
         let randomEyes = Math.floor(Math.random() * eyesStayles.length) + 1;
