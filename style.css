@@ -13,11 +13,11 @@ body{
 }
 #accessories-container{
     grid-area: 1/2/2/3;
-    margin-left: 25px;
+    
 }
 #styles-container{
     grid-area: 2/2/3/3;
-    margin-left: 25px;
+    
 }
 .button-container{
     display: flex;
@@ -26,4 +26,19 @@ body{
     align-content: flex-start;
     gap: 10px;
     margin: 10px;
+    margin-left: 50px;
+    width: 250px;
+}
+.button-container h5{
+    width: 100%;
+    margin: 0;
+    margin-bottom: 5px;
+}
+.button-container button{
+
+}
+#operations{
+    grid-area: 3/1/-2/2;
+    margin-left: 0;
+    margin-top: 25px;
 }
